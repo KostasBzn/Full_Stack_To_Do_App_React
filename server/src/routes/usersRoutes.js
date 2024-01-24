@@ -19,6 +19,6 @@ router.post("/signin", signinUser);
 
 router.get("/fetchusers", getAllUsers);
 
-router.get("/:userId", auth, findUser);
+router.get("/loggeduser", auth, findUser);
 
 export default router;
