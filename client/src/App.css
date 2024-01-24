@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #6436a0;
+}
+
+.navbar {
+  background-color: #28104e;
+  padding: 10px;
+  color: #fff;
+}
+
+.nav_user {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav_no-user {
+  display: flex;
+  color: white;
+  list-style: none;
+  justify-content: end;
+  gap: 30px;
+  margin-right: 10px;
+  height: 35px;
+  align-items: center;
+}
+
+.nav_no-user li a {
+  color: white;
+  text-decoration: none;
+  height: 35px;
+}
+
+.nav_no-user li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.nav_logout {
+  background-color: #ebc16b;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: bolder;
+  border-radius: 5px;
+  height: 35px;
+  width: 70px;
+}
+
+.nav_home {
+  margin-right: auto;
+  text-decoration: none;
+  color: white;
+}
+
+.form-container {
+  background-color: #28104e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.submit-btn {
+  background-color: #c7c7c7;
+  color: #6436a0;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 30%;
+  display: block;
+  margin: auto;
+}
+
+.submit-btn:hover {
+  background-color: #8d8d8d;
+}
+
+.signin_warning {
+  color: #ff0000;
+  text-align: center;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.form_page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 400px;
+  background-color: #fff;
+}
+
+.welcome-container p {
+  margin: 15px 0;
+}
+
+.link-style {
+  color: #6436a0; /* Link color */
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.link-style:hover {
+  color: #4a2771; /* Link color on hover */
+}
+
+.welcome_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.add-task_button {
+  padding: 10px 10px;
+  width: 80%;
+  font-size: 16px;
+  background-color: #9e9e9e;
+  color: #28104e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+.add-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.newtask-form-container {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.newtask-form-field {
+  margin-bottom: 15px;
+}
+
+.newtask-form-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.newtask-input-field,
+.newtask-select-field {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newtask-input-field {
+  resize: none;
+}
+.newtask-submit-btn {
+  background-color: #4a2771;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.newtask-submit-btn:hover {
+  background-color: #28104e;
+}
+
+.newtask-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Add this styling to a separate CSS file (List.css) or include it in your existing stylesheet */
+
+.list-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.task-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 400px;
+}
+
+.task-title,
+.task-content,
+.task-author,
+.task-priority,
+.task-completed,
+.task-assigned,
+.task-created {
+  margin: 0;
+  color: #333;
+}
+
+.task-content {
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  border-radius: 5px;
+  box-shadow: black 0 0 5px;
+  height: 100px;
+  margin: 10px 0;
+  padding: 5px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+.task-button {
+  margin-top: 15px;
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  align-items: center;
+  display: flex;
+  width: 56px;
+  justify-content: center;
+}
+
+.check-btn {
+  background-color: transparent;
+  color: #4caf50;
+  font-size: 20px;
+}
+
+.edit-btn {
+  background-color: transparent;
+  color: #333;
+  font-size: 20px;
+}
+
+.delete-btn {
+  background-color: transparent;
+  color: #e74c3c;
+  font-size: 20px;
+}
+
+.loading-message {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.task-buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-creator {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: bolder;
+  margin: 15px 0;
+}
+
+.task.assigned-container {
+  display: flex;
+  justify-content: left;
+}
+
+.task-assigned {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.task-completed-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: bold;
+}
+.newtask-cancel-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.edittask-btn-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.task-completed-toggle {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.btn-disabled {
+  color: #888;
+  cursor: not-allowed;
+}
