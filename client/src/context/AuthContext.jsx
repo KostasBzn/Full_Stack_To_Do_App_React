@@ -1,7 +1,7 @@
 import { createContext, useEffect } from "react";
 import { useState } from "react";
 import { baseURL } from "../config/api.js";
-import axios from "axios";
+import axios from "../config/axios-auth.js";
 import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router-dom";
 

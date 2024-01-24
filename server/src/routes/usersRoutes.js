@@ -5,6 +5,7 @@ import {
   signupUser,
   getAllUsers,
 } from "../controllers/usersController.js";
+import auth from "../middleware/user-auth.js";
 
 const router = express.Router();
 
@@ -18,6 +19,6 @@ router.post("/signin", signinUser);
 
 router.get("/fetchusers", getAllUsers);
 
-router.get("/:userId", findUser);
+router.get("/:userId", auth, findUser);
 
 export default router;
