@@ -55,7 +55,8 @@ export const signinUser = async (req, res) => {
 
 export const findUser = async (req, res) => {
   try {
-    const userId = req.params.userId;
+    //const userId = req.params.userId;
+    const userId = req.user.userId;
     const user = await User.findOne({ _id: userId });
     res.send({ success: true, user });
   } catch (error) {

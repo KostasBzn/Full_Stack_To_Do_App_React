@@ -2,7 +2,6 @@ import { createContext, useEffect } from "react";
 import { useState } from "react";
 import { baseURL } from "../config/api.js";
 import axios from "../config/axios-auth.js";
-import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router-dom";
 
 export const UserContext = createContext();
@@ -76,11 +75,7 @@ const UserContextProvider = ({ children }) => {
     const fetchUser = async () => {
       if (token) {
         try {
-          const decodedToken = jwtDecode(token);
-          console.log("decoded token:", decodedToken.userId);
-          const response = await axios.get(
-            baseURL + `/users/${decodedToken.userId}`
-          );
+          const response = await axios.get(baseURL + `/users/loggeduser`);
           setUserInfo(response.data.user);
           setUser(response.data.user.username);
 
