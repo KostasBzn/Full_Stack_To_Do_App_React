@@ -44,8 +44,6 @@ const UserContextProvider = ({ children }) => {
       localStorage.setItem("token", data.token);
       console.log(data.message);
       setSignInMessage(data.message);
-      setUser(data.user.username);
-      setUserInfo(data.user);
       //navigate("/signedin"); navigates to new page
       window.location.replace("/signedin"); // reloads the page
     } catch (error) {

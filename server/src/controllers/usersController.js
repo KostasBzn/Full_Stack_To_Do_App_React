@@ -41,7 +41,6 @@ export const signinUser = async (req, res) => {
     res.send({
       success: true,
       message: "Authentication sucessful",
-      user,
       token,
     });
 
