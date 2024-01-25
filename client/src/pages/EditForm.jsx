@@ -36,8 +36,6 @@ const EditForm = () => {
     if (selectedTodo) {
       editTodo(selectedTodo._id, updatedData);
     }
-
-    console.log("edit form is open");
   };
 
   const handleCancel = () => {
