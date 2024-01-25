@@ -1,11 +1,10 @@
 import express from "express";
-import dotenv from "dotenv";
+import "dotenv/config";
 import cors from "cors";
 import connectDB from "./config/mongo-db.js";
 import todoListRoutes from "./routes/todoListRoutes.js";
 import usersRoutes from "./routes/usersRoutes.js";
 
-dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors());
