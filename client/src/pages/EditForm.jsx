@@ -16,10 +16,10 @@ const EditForm = () => {
 
   useEffect(() => {
     if (selectedTodo) {
-      setTitle(selectedTodo.title || "");
-      setContent(selectedTodo.content || "");
-      setPriority(selectedTodo.priority || "medium");
-      setSelectedUser(selectedTodo.selectedUser || "");
+      setTitle(selectedTodo.title);
+      setContent(selectedTodo.content);
+      setPriority(selectedTodo.priority);
+      setSelectedUser(selectedTodo.selectedUser);
     }
   }, [selectedTodo]);
 
