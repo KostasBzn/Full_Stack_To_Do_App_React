@@ -1,5 +1,5 @@
 import express from "express";
-import "dotenv/config";
+import "dotenv/config"; //if we import the dotenv to the server we dont need to import it again in any of the routes
 import cors from "cors";
 import connectDB from "./config/mongo-db.js";
 import todoListRoutes from "./routes/todoListRoutes.js";
