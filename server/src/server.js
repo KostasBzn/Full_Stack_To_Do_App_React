@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(cors(
   {
-  origin: 'https://Full_Stack_To_Do_App_React.vercel.app', 
+  origin: 'https://full-stack-to-do-app-react.vercel.app/', 
   methods: ['GET', 'POST'],
   credentials: true
 };
