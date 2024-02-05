@@ -7,7 +7,12 @@ import usersRoutes from "./routes/usersRoutes.js";
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+  {
+  origin: 'https://Full_Stack_To_Do_App_React.vercel.app', 
+  methods: ['GET', 'POST'],
+};
+));
 connectDB();
 
 const port = process.env.PORT;
