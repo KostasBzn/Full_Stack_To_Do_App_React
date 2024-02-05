@@ -11,6 +11,7 @@ app.use(cors(
   {
   origin: 'https://Full_Stack_To_Do_App_React.vercel.app', 
   methods: ['GET', 'POST'],
+  credentials: true
 };
 ));
 connectDB();
