@@ -1,1 +1,1 @@
-export const baseURL = "http://localhost:3002";
+export const baseURL = "https://full-stack-to-do-app-react.vercel.app/";
