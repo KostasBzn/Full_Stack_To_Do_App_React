@@ -4,6 +4,7 @@
     {
       "src": "server.js",
       "destination": "/index.html"
+      
     }
   ],
 
