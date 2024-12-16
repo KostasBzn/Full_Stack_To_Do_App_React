@@ -1,4 +1,4 @@
-# 🇹🇭 **Thai ToDo List App**
+# **Thai ToDo List App**
 
 A full-stack To-Do list application developed as my first project after my long travel in Thailand. This app allows users to manage tasks with authentication and task assignment features.
 
